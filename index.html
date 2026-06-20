@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hilal Osumanu</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <!-- EmailJS -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+<body>
+
+  <!-- ============================================================
+       NAVIGATION BAR
+       ============================================================ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">Hilal Osumanu</a>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <!-- Hamburger menu for mobile -->
+      <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile menu overlay -->
+  <div class="mobile-menu" id="mobile-menu">
+    <ul>
+      <li><a href="#home" class="mobile-link">Home</a></li>
+      <li><a href="#about" class="mobile-link">About</a></li>
+      <li><a href="#skills" class="mobile-link">Skills</a></li>
+      <li><a href="#projects" class="mobile-link">Projects</a></li>
+      <li><a href="#contact" class="mobile-link">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- ============================================================
+       HERO SECTION
+       ============================================================ -->
+  <section class="hero" id="home">
+    <div class="hero-content fade-in">
+      <div class="hero-text">
+        <p class="hero-greeting">Hello, I'm</p>
+        <h1 class="hero-name">Hilal Osumanu</h1>
+
+        <!-- Animated typing titles -->
+        <div class="hero-titles">
+          <span class="typed-text" id="typed-text"></span>
+          <span class="cursor">|</span>
+        </div>
+
+        <p class="hero-bio">
+          I'm a student learning frontend development and building responsive web pages. 
+         I enjoy turning ideas into clean, interactive websites while improving my skills one project at a time.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-primary">
+            <i class="fas fa-rocket"></i> View My Work
+          </a>
+          <a href="#contact" class="btn btn-secondary">
+            <i class="fas fa-envelope"></i> Contact Me
+          </a>
+        </div>
+
+        <!-- Social links in hero -->
+        <div class="hero-socials">
+          <a href="https://github.com/tan44-lab" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://instagram.com/o7tanjiro" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+
+      <!-- Hero profile image -->
+      <div class="hero-image">
+        <div class="image-ring">
+            <div class="image-wrapper">
+              <img src="image/profile.jpg" alt="profile" />
+            </div>
+        </div>
+        <!-- Decorative floating badges -->
+        <div class="hero-badge badge-1"><i class="fas fa-code"></i> Developer</div>
+        <div class="hero-badge badge-2"><i class="fas fa-star"></i> Creative</div>
+      </div>
+    </div>
+
+    <!-- Scroll indicator -->
+    <a href="#about" class="scroll-indicator" aria-label="Scroll down">
+      <i class="fas fa-chevron-down"></i>
+    </a>
+  </section>
+
+  <!-- ============================================================
+       ABOUT SECTION
+       ============================================================ -->
+  <section class="section about" id="about">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="section-tag">Get to know me</span>
+        <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+      </div>
+
+      <div class="about-grid">
+        <!-- About image -->
+        <div class="about-image fade-in">
+          <div class="about-img-wrapper">
+            <!-- ✏️ Replace with your own about section photo -->
+            <!-- Example: <img src="image/about.jpg" alt="About Your Name" /> -->
+            <img src="image/about.jpg" alt="About Hilal Osumanu" />
+          </div>
+          <!-- Stats cards -->
+          <div class="about-stats">
+            <!-- ✏️ Update these numbers to reflect your own experience -->
+            <div class="stat-card">
+              <span class="stat-number">2+</span>
+              <span class="stat-label">Years Learning</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number">4</span>
+              <span class="stat-label">Projects Built</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number">3</span>
+              <span class="stat-label">Technologies</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- About text content -->
+        <div class="about-content fade-in">
+
+          <!-- Who I Am -->
+          <div class="about-block">
+            <h3><i class="fas fa-user-astronaut"></i> Who I Am</h3>
+            <!-- ✏️ Edit this paragraph with your own bio -->
+            <p>
+              I'm a dedicated IT programming student with a passion for technology and solving problems through code. I'm currently learning frontend and software development while building small projects to improve my skills, with the goal of becoming a full-time software developer in the future.
+            </p>
+          </div>
+
+          <!-- Education -->
+          <div class="about-block">
+            <h3><i class="fas fa-graduation-cap"></i> Education</h3>
+            <!-- ✏️ Edit with your own education details -->
+            <div class="timeline-item">
+              <strong>Secondary School</strong>
+              <span class="timeline-sub">St. Thomas Aquinas Senior High-School &mdash; 09/2019 – 03/2025</span>
+              <p>High school diploma according to Ghanaian standard
+Accra, Ghana</p>
+            </div>
+            <div class="timeline-item">
+              <strong>Deutschkurs</strong>
+              <span class="timeline-sub"> Niveau A1,Niveau A2,Niveau B1, Niveau B2 &mdash; 01/2024 – 06/2022</span>
+              <p>I attended an Austrian German course when I came to Austria.</p>
+            </div>
+            <div class="timeline-item">
+              <strong>Jugendwerkstatt</strong>
+              <span class="timeline-sub">Ipcenter.at GmbH, 1120 Wien &mdash; 04/2025 – 06/2025 </span>
+              <p>Schwerpunkt: Applikationsentwicklung, Coding, 
+IT Systemtechnik, Mediendesign.</p>
+            </div>
+          </div>
+
+          <!-- Experience -->
+          <div class="about-block">
+            <h3><i class="fas fa-briefcase"></i> Experience</h3>
+            <!-- ✏️ Edit with your own experience or internships -->
+            <div class="timeline-item">
+              <strong>Unemployed</strong>
+              <span class="timeline-sub">student &mdash; 2023 – Present</span>
+              <p>Currently looking for an apprentice and also learning to create projects myself.</p>
+            </div>
+          </div>
+
+          <!-- Goals & Passions -->
+          <div class="about-block goals-block">
+            <h3><i class="fas fa-bullseye"></i> Goals & Passion</h3>
+            <!-- ✏️ Edit with your personal goals -->
+            <ul class="goals-list">
+              <li><i class="fas fa-check-circle"></i> Land a junior developer role at an innovative company</li>
+              <li><i class="fas fa-check-circle"></i> Master full-stack development and cloud architecture</li>
+              <li><i class="fas fa-check-circle"></i> Contribute to meaningful open-source projects</li>
+              <li><i class="fas fa-check-circle"></i> Build products that solve real-world problems</li>
+            </ul>
+          </div>
+
+          <a href="#contact" class="btn btn-primary">Let's Connect <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SKILLS SECTION
+       ============================================================ -->
+  <section class="section skills" id="skills">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="section-tag">What I know</span>
+        <h2 class="section-title">My <span class="gradient-text">Skills</span></h2>
+      </div>
+
+      <!-- ✏️ To add a skill: copy one .skill-card block and edit the icon, name, and data-level -->
+      <!-- ✏️ data-level = percentage (0–100) shown on the progress bar -->
+      <div class="skills-grid fade-in">
+
+        <div class="skill-card">
+          <div class="skill-icon html"><i class="fab fa-html5"></i></div>
+          <div class="skill-info">
+            <div class="skill-header">
+              <span class="skill-name">HTML5</span>
+              <span class="skill-percent">90%</span>
+            </div>
+            <div class="skill-bar"><div class="skill-fill" data-level="90"></div></div>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon css"><i class="fab fa-css3-alt"></i></div>
+          <div class="skill-info">
+            <div class="skill-header">
+              <span class="skill-name">CSS3</span>
+              <span class="skill-percent">85%</span>
+            </div>
+            <div class="skill-bar"><div class="skill-fill" data-level="85"></div></div>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon js"><i class="fab fa-js-square"></i></div>
+          <div class="skill-info">
+            <div class="skill-header">
+              <span class="skill-name">JavaScript</span>
+              <span class="skill-percent">75%</span>
+            </div>
+            <div class="skill-bar"><div class="skill-fill" data-level="75"></div></div>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon git"><i class="fab fa-git-alt"></i></div>
+          <div class="skill-info">
+            <div class="skill-header">
+              <span class="skill-name">Git</span>
+              <span class="skill-percent">50%</span>
+            </div>
+            <div class="skill-bar"><div class="skill-fill" data-level="50"></div></div>
+          </div>
+        </div>
+        </div>
+
+        <!-- ✏️ Add another skill below this comment (copy a skill-card block above) -->
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       PROJECTS SECTION
+       ============================================================ -->
+  <section class="section projects" id="projects">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="section-tag">What I've built</span>
+        <h2 class="section-title">My <span class="gradient-text">Projects</span></h2>
+      </div>
+
+      <!-- ✏️ To add a new project: copy one .project-card block and fill in your details -->
+      <div class="projects-grid fade-in">
+
+        <!-- PROJECT 1 -->
+        <div class="project-card">
+          <div class="project-img">
+            <!-- ✏️ Replace with your own project screenshot -->
+            <!-- Example: <img src="image/project1.jpg" alt="Project 1" /> -->
+            <img src="image/project 1 .jpg" alt="Project 1" />
+            <div class="project-overlay">
+              <!-- ✏️ Replace "#" with your GitHub and live demo links -->
+              <a href="https://github.com/tan44-lab/Calculator.jiro" target="_blank" class="overlay-btn"><i class="fab fa-github"></i></a>
+              <a href="https://tan44-lab.github.io/Calculator.jiro/" target="_blank" class="overlay-btn"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <div class="project-info">
+            <!-- ✏️ Replace "Project Title" with your project name -->
+            <h3 class="project-title">Calculator</h3>
+            <!-- ✏️ Replace with your project description -->
+            <p class="project-desc">
+              A simple calculator that performs basic arithmetic operations. This project helped me practice DOM manipulation, event handling, and JavaScript logic.
+            </p>
+            <div class="project-tags">
+              <!-- ✏️ Replace tags with technologies you used -->
+              <span>HTML</span><span>CSS</span><span>JavaScript</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/tan44-lab/Calculator.jiro" target="_blank" class="btn btn-sm btn-outline">
+                <i class="fab fa-github"></i> GitHub
+              </a>
+              <a href="https://tan44-lab.github.io/Calculator.jiro/" target="_blank" class="btn btn-sm btn-primary">
+                <i class="fas fa-rocket"></i> Live Demo
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- PROJECT 2 -->
+        <div class="project-card">
+          <div class="project-img">
+            <img src="image/project 2.jpg" alt="Project 2" />
+            <div class="project-overlay">
+              <a href="https://github.com/tan44-lab/Login.jiro" target="_blank" class="overlay-btn"><i class="fab fa-github"></i></a>
+              <a href="https://tan44-lab.github.io/Login.jiro/" target="_blank" class="overlay-btn"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">Login Page</h3>
+            <p class="project-desc">
+              A modern login page designed with HTML and CSS. Although it is not yet responsive, it demonstrates my understanding of layouts, forms, and user interface design.
+            </p>
+            <div class="project-tags">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/tan44-lab/Login.jiro" target="_blank" class="btn btn-sm btn-outline">
+                <i class="fab fa-github"></i> GitHub
+              </a>
+              <a href="https://tan44-lab.github.io/Login.jiro/" target="_blank" class="btn btn-sm btn-primary">
+                <i class="fas fa-rocket"></i> Live Demo
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- PROJECT 3 -->
+        <div class="project-card">
+          <div class="project-img">
+            <img src="image/project 3 .jpg" alt="Project 3" />
+            <div class="project-overlay">
+              <a href="https://github.com/tan44-lab/Brick-game.jiro" target="_blank" class="overlay-btn"><i class="fab fa-github"></i></a>
+              <a href="https://tan44-lab.github.io/Brick-game.jiro/" target="_blank" class="overlay-btn"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">Brick Game</h3>
+            <p class="project-desc">
+              A classic brick breaker game developed with JavaScript, featuring ball movement, collision detection, score tracking, and interactive gameplay. This project improved my understanding of game logic and animations.
+            </p>
+            <div class="project-tags">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/tan44-lab/Brick-game.jiro" target="_blank" class="btn btn-sm btn-outline">
+                <i class="fab fa-github"></i> GitHub
+              </a>
+              <a href="https://tan44-lab.github.io/Brick-game.jiro/" target="_blank" class="btn btn-sm btn-primary">
+                <i class="fas fa-rocket"></i> Live Demo
+              </a>
+            </div>
+          </div>
+        </div>
+         <div class="project-card">
+          <div class="project-img">
+            <img src="image/project 4.jpg" alt="Project 4" />
+            <div class="project-overlay">
+              <a href="https://github.com/tan44-lab/Weather-App" target="_blank" class="overlay-btn"><i class="fab fa-github"></i></a>
+              <a href="https://tan44-lab.github.io/Weather-App/" target="_blank" class="overlay-btn"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">Weather App</h3>
+            <p class="project-desc">
+              A weather application that displays real-time weather information based on user input by connecting to a weather API. This project helped me learn API integration, asynchronous JavaScript, and dynamic content rendering.            </p>
+            <div class="project-tags">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/tan44-lab/Weather-App" target="_blank" class="btn btn-sm btn-outline">
+                <i class="fab fa-github"></i> GitHub
+              </a>
+              <a href="https://tan44-lab.github.io/Weather-App/" target="_blank" class="btn btn-sm btn-primary">
+                <i class="fas fa-rocket"></i> Live Demo
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CONTACT SECTION
+       ============================================================ -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="section-tag">Get in touch</span>
+        <h2 class="section-title">Contact <span class="gradient-text">Me</span></h2>
+      </div>
+
+      <div class="contact-grid fade-in">
+
+        <!-- Contact Info -->
+        <div class="contact-info">
+          <h3>Let's talk!</h3>
+          <!-- ✏️ Edit this message with your own words -->
+          <p>
+            I'm currently open to new opportunities and collaborations. Whether
+            you have a project in mind, a question, or just want to say hi —
+            feel free to reach out. I'll do my best to get back to you quickly.
+          </p>
+
+          <div class="contact-details">
+            <!-- ✏️ Replace with your own email address -->
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+              <div>
+                <strong>Email</strong>
+                <span>hilalfatawu92@gmail.com</span>
+              </div>
+            </div>
+            <!-- ✏️ Replace with your location -->
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+              <div>
+                <strong>Location</strong>
+                <span>Vienna, Austria</span>
+              </div>
+            </div>
+            <!-- ✏️ Replace with your availability status -->
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fas fa-circle available"></i></div>
+              <div>
+                <strong>Status</strong>
+                <span>Available for freelance & full-time roles</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Social links -->
+          <div class="contact-socials">
+            <!-- ✏️ Replace "#" with your actual social profile URLs -->
+            <a href="https://github.com/tan44-lab" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://instagram.com/o7tanjiro" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form-wrapper">
+          <!-- EmailJS sends this form directly to your email inbox -->
+          <form class="contact-form" id="contact-form" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="John Doe" required />
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="john@example.com" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" placeholder="What is this about?" required />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+            </div>
+
+            <!-- Success / error messages -->
+            <div class="form-feedback" id="form-feedback"></div>
+
+            <button type="submit" class="btn btn-primary btn-submit" id="submit-btn">
+              <span class="btn-text"><i class="fas fa-paper-plane"></i> Send Message</span>
+              <span class="btn-loading" style="display:none;"><i class="fas fa-spinner fa-spin"></i> Sending…</span>
+            </button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer class="footer">
+    <div class="footer-container">
+
+      <div class="footer-brand">
+        <!-- ✏️ Replace "YN" and "Your Name" with your own initials and name -->
+        <a href="#home" class="nav-logo">HO</a>
+        <p>Building the web, one line at a time.</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div class="footer-socials">
+        <!-- ✏️ Replace each "#" with your actual social profile links -->
+        <a href="https://github.com/tan44-lab" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://instagram.com/o7tanjiro" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <!-- ✏️ Replace "mailto:#" with your email address -->
+        <a href="mailto:hilalfatawu92@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+      </div>
+
+    </div>
+    <div class="footer-bottom">
+      <!-- ✏️ Replace "Your Name" with your own name -->
+      <p>&copy; <span id="year"></span> Hilal Osumanu. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Scroll to top button -->
+  <button class="scroll-top" id="scroll-top" aria-label="Scroll to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
